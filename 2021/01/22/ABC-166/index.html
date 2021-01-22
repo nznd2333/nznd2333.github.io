@@ -17,7 +17,7 @@
   <meta name="description" content="兴趣使然的个人博客">
   <meta name="author" content="狸獴">
   <meta name="keywords" content="">
-  <title>【解题报告】剑指 Offer 03. 数组中重复的数字 - 【博客】狸獴</title>
+  <title>【解题报告】AtCoder Beginner Contest 166 - 【博客】狸獴</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
@@ -174,7 +174,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="【解题报告】剑指 Offer 03. 数组中重复的数字">
+            <span class="h2" id="subtitle" title="【解题报告】AtCoder Beginner Contest 166">
               
             </span>
 
@@ -189,8 +189,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-01-22 18:55" pubdate>
-        2021年1月22日 晚上
+      <time datetime="2021-01-22 15:51" pubdate>
+        2021年1月22日 下午
       </time>
     </span>
   
@@ -201,7 +201,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      175 字
+      925 字
     </span>
   
 
@@ -211,7 +211,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      2
+      14
        分钟
     </span>
   
@@ -249,18 +249,31 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">【解题报告】剑指 Offer 03. 数组中重复的数字</h1>
+            <h1 style="display: none">【解题报告】AtCoder Beginner Contest 166</h1>
             
             <div class="markdown-body">
-              <h1 id="【解题报告】剑指-Offer-03-数组中重复的数字"><a href="#【解题报告】剑指-Offer-03-数组中重复的数字" class="headerlink" title="【解题报告】剑指 Offer 03. 数组中重复的数字"></a>【解题报告】剑指 Offer 03. 数组中重复的数字</h1><h3 id="题意"><a href="#题意" class="headerlink" title="题意"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/">题意</a></h3><p>长度为$n$的数组中所有数字的范围都在区间$[0,n-1]$中，找出任意一个重复出现的数字，其中$n\in[2,100000]$。</p>
-<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>遍历数组，将数$i$放到数组的第$i$个位置上，若数$i$与数组第$i$个数上的数字相等时则发生了重复。</p>
-<div class="note note-primary">
-            <p>当数字$i$恰好在数组第$i$个位置上时应跳过</p>
-          </div>
-
-<h3 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> &#123;</span><br> <span class="hljs-keyword">public</span>:<br>  <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">findRepeatNumber</span><span class="hljs-params">(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; &amp;nums)</span> </span>&#123;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; nums.size(); i++) &#123;<br>      <span class="hljs-keyword">if</span> (nums[i] == i)<br>        <span class="hljs-keyword">continue</span>;<br>      <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (nums[i] == nums[nums[i]])<br>        <span class="hljs-keyword">return</span> nums[i];<br>      <span class="hljs-keyword">else</span><br>        swap(nums[i], nums[nums[i]]);<br>    &#125;<br>    <span class="hljs-keyword">return</span> nums[<span class="hljs-number">0</span>];<br>  &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
-
-
+              <h1 id="【解题报告】AtCoder-Beginner-Contest-166"><a href="#【解题报告】AtCoder-Beginner-Contest-166" class="headerlink" title="【解题报告】AtCoder Beginner Contest 166"></a>【解题报告】AtCoder Beginner Contest 166</h1><h2 id="A-A-C"><a href="#A-A-C" class="headerlink" title="A - A?C"></a><a target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc166/tasks/abc166_a">A - A?C</a></h2><h3 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h3><p>输入<code>ABC</code>则输出<code>ARC</code>，输入<code>ARC</code>则输出<code>ABC</code></p>
+<h2 id="B-Trick-or-Treat"><a href="#B-Trick-or-Treat" class="headerlink" title="B - Trick or Treat"></a><a target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc166/tasks/abc166_b">B - Trick or Treat</a></h2><h3 id="题意-1"><a href="#题意-1" class="headerlink" title="题意"></a>题意</h3><p>给定$n,k$, 接下来$k$组数据, 每组数据第一行一个数$k_i$表示接下来的一行包含$k_i$个$1$至$n$的数, 统计$1$至$n$之间从未出现的数的个数</p>
+<h2 id="C-Peaks"><a href="#C-Peaks" class="headerlink" title="C - Peaks"></a><a target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc166/tasks/abc166_c">C - Peaks</a></h2><h3 id="题意-2"><a href="#题意-2" class="headerlink" title="题意"></a>题意</h3><p>有n个天文台, 高度为h, m条路径, 统计符合以下条件的天文台数量: 与该天文台有直接相连的路径的天文台高度均低于它. </p>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>对于一条路径两端的两个天文台, 其中高度较低的一定不需要统计, 故对每条路径排除掉较低的端点, 注意高度相等时两个端点都应该排除</p>
+<h3 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;<br><span class="hljs-keyword">typedef</span> <span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> ll ;<br><span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> N=<span class="hljs-number">100010</span>;<br><span class="hljs-keyword">int</span> h[N];<br><span class="hljs-keyword">bool</span> flag[N];<br><br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>    <span class="hljs-keyword">int</span> n,m;<span class="hljs-built_in">cin</span> &gt;&gt; n &gt;&gt; m;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">1</span>;i&lt;=n;i++)<span class="hljs-built_in">cin</span> &gt;&gt; h[i];<br>    <span class="hljs-keyword">while</span>(m--)&#123;<br>        <span class="hljs-keyword">int</span> a,b ;<span class="hljs-built_in">cin</span> &gt;&gt; a &gt;&gt; b;<br>        <span class="hljs-keyword">if</span>(h[a]==h[b])flag[a]=flag[b]=<span class="hljs-number">1</span>;<br>        flag[h[a]&gt;h[b]?b:a]=<span class="hljs-number">1</span>;<br>    &#125;<br>    <span class="hljs-keyword">int</span> ans=<span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">1</span>;i&lt;=n;i++)<span class="hljs-keyword">if</span>(!flag[i])ans++;<br>    <span class="hljs-built_in">cout</span> &lt;&lt; ans &lt;&lt; <span class="hljs-built_in">endl</span>;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h2 id="D-I-hate-Factorization"><a href="#D-I-hate-Factorization" class="headerlink" title="D - I hate Factorization"></a><a target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc166/tasks/abc166_d">D - I hate Factorization</a></h2><h3 id="题意-3"><a href="#题意-3" class="headerlink" title="题意"></a>题意</h3><p>已知$X$, 求一组$A,B$ 满足$A^5-B^5=X$, 解一定存在</p>
+<h3 id="思路-1"><a href="#思路-1" class="headerlink" title="思路"></a>思路</h3><p>易知, 当$|A|$越大,$|A-B|$会接近$1$, 注意到$X&lt;10^9$,有$-300&lt;A,B&lt;300$, 因此枚举即可</p>
+<h3 id="AC代码-1"><a href="#AC代码-1" class="headerlink" title="AC代码"></a>AC代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;<br><span class="hljs-keyword">typedef</span> <span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> ll ;<br><br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>    ll x;<span class="hljs-built_in">cin</span> &gt;&gt; x;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">-300</span>;i&lt;=<span class="hljs-number">300</span>;i++)<br>        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j=<span class="hljs-number">-300</span>;j&lt;=<span class="hljs-number">300</span>;j++)&#123;<br>            ll m=i*i,n=j*j;<br>            <span class="hljs-keyword">if</span>(m*m*i-n*n*j==x)&#123;<br>                <span class="hljs-built_in">cout</span> &lt;&lt; i &lt;&lt; <span class="hljs-string">&quot; &quot;</span> &lt;&lt; j &lt;&lt; <span class="hljs-built_in">endl</span>;<br>                <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>            &#125;<br>        &#125;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h2 id="E-This-Message-Will-Self-Destruct-in-5s"><a href="#E-This-Message-Will-Self-Destruct-in-5s" class="headerlink" title="E - This Message Will Self-Destruct in 5s"></a><a target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc166/tasks/abc166_e">E - This Message Will Self-Destruct in 5s</a></h2><h3 id="题意-4"><a href="#题意-4" class="headerlink" title="题意"></a>题意</h3><p>给定数组$A_i$, 求满足$|i-j|=A_i+A_j$的数对个数</p>
+<h3 id="思路-2"><a href="#思路-2" class="headerlink" title="思路"></a>思路</h3><p>设$j&gt;i$, 等式变成$j-A_j=A_i+i$, 统计$j-A_j$个数, 依次加上$A_i+i$的个数即可, 由于要满足$j&gt;i$, 每次需减少一个$i-A_i$ </p>
+<h3 id="AC代码-2"><a href="#AC代码-2" class="headerlink" title="AC代码"></a>AC代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;<br><span class="hljs-keyword">typedef</span> <span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> ll ;<br><span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> N=<span class="hljs-number">200020</span>;<br><span class="hljs-keyword">int</span> a[N];<br><br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>    <span class="hljs-keyword">int</span> n;<span class="hljs-built_in">cin</span> &gt;&gt; n;<br>    <span class="hljs-built_in">map</span>&lt;<span class="hljs-keyword">int</span>,<span class="hljs-keyword">int</span>&gt; mp;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">1</span>;i&lt;=n;i++)&#123;<br>        <span class="hljs-built_in">cin</span> &gt;&gt; a[i];<br>        mp[i-a[i]]++;<br>    &#125;<br>    ll ans=<span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">1</span>;i&lt;=n;i++)&#123;<br>        mp[i-a[i]]--;<br>        ans+=mp[i+a[i]];<br>    &#125;<br>    <span class="hljs-built_in">cout</span> &lt;&lt; ans &lt;&lt; <span class="hljs-built_in">endl</span>;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h2 id="F-Three-Variables-Game"><a href="#F-Three-Variables-Game" class="headerlink" title=" F - Three Variables Game"></a><a target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc166/tasks/abc166_f"> F - Three Variables Game</a></h2><h3 id="题意-5"><a href="#题意-5" class="headerlink" title="题意"></a>题意</h3><p>给定三个数$A,B,C$,有三种操作:</p>
+<ul>
+<li>AB: AB 其中一个加一另一个减一</li>
+<li>BC:BC 其中一个加一另一个减一</li>
+<li>AC:AC 其中一个加一另一个减一</li>
+</ul>
+<p>问能否在保证三个数都非负的条件下进行$n$次操作,如果可以输出每次操作加一的那个</p>
+<h3 id="参考源"><a href="#参考源" class="headerlink" title="参考源"></a>参考源</h3><p>代码地址: <a target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc166/submissions/12816649">https://atcoder.jp/contests/abc166/submissions/12816649</a></p>
+<p>作者: <a target="_blank" rel="noopener" href="https://atcoder.jp/users/jintiandun">jintiandun</a></p>
+<h3 id="思路-3"><a href="#思路-3" class="headerlink" title="思路"></a>思路</h3><p>模拟: 优先较小的数加一,如果两数相等,优先下一步要用的数加一</p>
+<h3 id="AC代码-3"><a href="#AC代码-3" class="headerlink" title="AC代码"></a>AC代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;<br><span class="hljs-keyword">typedef</span> <span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> ll ;<br><span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> N=<span class="hljs-number">100020</span>;<br><span class="hljs-keyword">int</span> v[<span class="hljs-number">3</span>],p[N],q[N];<br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>    <span class="hljs-keyword">int</span> n;<span class="hljs-built_in">cin</span> &gt;&gt; n;<br>    <span class="hljs-built_in">string</span> s;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">3</span>;i++)<span class="hljs-built_in">cin</span> &gt;&gt; v[i];<br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">1</span>;i&lt;=n;i++)&#123;<br>        <span class="hljs-built_in">cin</span> &gt;&gt; s;<br>        p[i]=s[<span class="hljs-number">0</span>]-<span class="hljs-string">&#x27;A&#x27;</span>;<br>        q[i]=s[<span class="hljs-number">1</span>]-<span class="hljs-string">&#x27;A&#x27;</span>;<br>    &#125;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">1</span>;i&lt;=n;i++)&#123;<br>        <span class="hljs-keyword">if</span>(v[p[i]]&gt;v[q[i]])swap(p[i],q[i]);<br>        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(v[p[i]]==v[q[i]])<br>            <span class="hljs-keyword">if</span>(i&lt;n&amp;&amp;(q[i]==q[i+<span class="hljs-number">1</span>]||q[i]==p[i+<span class="hljs-number">1</span>]))swap(p[i],q[i]);<br>        <span class="hljs-keyword">if</span>(!v[q[i]])<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>*<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;No\n&quot;</span>);<br>        v[p[i]]++,v[q[i]]--;<br>    &#125;<br>    <span class="hljs-built_in">puts</span>(<span class="hljs-string">&quot;Yes&quot;</span>);<br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">1</span>;i&lt;=n;i++) <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%c\n&quot;</span>,<span class="hljs-string">&#x27;A&#x27;</span>+p[i]);<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
 
             </div>
             <hr>
@@ -272,7 +285,7 @@
                     
                       <a class="hover-with-bg" href="/categories/%E8%A7%A3%E9%A2%98%E6%8A%A5%E5%91%8A/">解题报告</a>
                     
-                      <a class="hover-with-bg" href="/categories/%E8%A7%A3%E9%A2%98%E6%8A%A5%E5%91%8A/%E5%89%91%E6%8C%87Offer/">剑指Offer</a>
+                      <a class="hover-with-bg" href="/categories/%E8%A7%A3%E9%A2%98%E6%8A%A5%E5%91%8A/AtCoder/">AtCoder</a>
                     
                   </div>
                 
@@ -280,14 +293,14 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/%E5%89%91%E6%8C%87Offer/">剑指Offer</a>
+                      <a class="hover-with-bg" href="/tags/AtCoder/">AtCoder</a>
                     
                   </div>
                 
               </div>
               <p class="note note-warning">
                 <strong>本文作者: </strong><a href="/">狸獴</a> <br>
-                <strong>本文链接: </strong><a href="http://nznd2333.github.io/2021/01/22/%E3%80%90%E8%A7%A3%E9%A2%98%E6%8A%A5%E5%91%8A%E3%80%91%E5%89%91%E6%8C%87-Offer-03-%E6%95%B0%E7%BB%84%E4%B8%AD%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0%E5%AD%97/">http://nznd2333.github.io/2021/01/22/%E3%80%90%E8%A7%A3%E9%A2%98%E6%8A%A5%E5%91%8A%E3%80%91%E5%89%91%E6%8C%87-Offer-03-%E6%95%B0%E7%BB%84%E4%B8%AD%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0%E5%AD%97/</a> <br>
+                <strong>本文链接: </strong><a href="http://nznd2333.github.io/2021/01/22/ABC-166/">http://nznd2333.github.io/2021/01/22/ABC-166/</a> <br>
                 <strong>版权声明: </strong>本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
                    </p>
                    
@@ -296,15 +309,15 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/2021/01/22/ABC-177/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">【解题报告】AtCoder Beginner Contest 177</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
-                    
-                      <a href="/2021/01/22/%E3%80%90%E8%A7%A3%E9%A2%98%E6%8A%A5%E5%91%8A%E3%80%91AtCoder-Beginner-Contest-177/">
-                        <span class="hidden-mobile">【解题报告】AtCoder Beginner Contest 177</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
                     
                   </article>
                 </div>
