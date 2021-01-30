@@ -6,7 +6,7 @@
   <link href="http://nznd2333.github.io/atom.xml" rel="self"/>
   
   <link href="http://nznd2333.github.io/"/>
-  <updated>2021-01-25T14:21:14.155Z</updated>
+  <updated>2021-01-30T09:46:23.067Z</updated>
   <id>http://nznd2333.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【解题报告】Codeforces Round #697 (Div. 3)</title>
+    <link href="http://nznd2333.github.io/2021/01/29/CF697-3/"/>
+    <id>http://nznd2333.github.io/2021/01/29/CF697-3/</id>
+    <published>2021-01-29T15:02:00.000Z</published>
+    <updated>2021-01-30T09:46:23.067Z</updated>
+    
+    
+    <summary type="html">Codeforces Round #697 (Div. 3)</summary>
+    
+    
+    
+    <category term="解题报告" scheme="http://nznd2333.github.io/categories/%E8%A7%A3%E9%A2%98%E6%8A%A5%E5%91%8A/"/>
+    
+    <category term="Codeforces" scheme="http://nznd2333.github.io/categories/%E8%A7%A3%E9%A2%98%E6%8A%A5%E5%91%8A/Codeforces/"/>
+    
+    
+    <category term="Codeforces" scheme="http://nznd2333.github.io/tags/Codeforces/"/>
+    
+  </entry>
   
   <entry>
     <title>【解题报告】剑指 Offer 10- I. 斐波那契数列</title>
